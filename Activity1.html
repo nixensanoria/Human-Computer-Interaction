@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">Orihinal na mensahe</div>
+    <button onclick="changeText()">Palitan ang mensahe</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerText = "Napalitan na ang mensahe!";
+        }
+    </script>
+</body>
+</html>
