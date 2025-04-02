@@ -4,57 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traffic Lights</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-
-    .traffic-light {
-      width: 100px;
-      height: 300px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      padding: 10px;
-      background-color: #000000;
-    }
-
-    .light {
-      width: 80px;
-      height: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      background-color: #555;
-      transition: background-color 9s ease-in-out;
-    }
-
-    button {
-      width: 200px;
-      height: 50px;
-      position: absolute;
-      right: 35%;
-      bottom: 33%;
-      background-color: #797e7aa8;
-      color: white;
-      border-color: black;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-  </style>
+  <link rel="stylesheet" href="css traffic light.css">
 </head>
 <body>
   <div class="traffic-light">
@@ -64,27 +14,7 @@
   </div>
   <button onclick="changeLight()">Ibahin ang Traffic Light</button>
 
-  <script>
-    let currentLight = "red";  
-
-    function changeLight() {
-      
-      document.getElementById("red").style.backgroundColor = "#555";
-      document.getElementById("yellow").style.backgroundColor = "#555";
-      document.getElementById("green").style.backgroundColor = "#555";
-
-      
-      if (currentLight === "red") {
-        document.getElementById("green").style.backgroundColor = "green";
-        currentLight = "green";
-      } else if (currentLight === "green") {
-        document.getElementById("yellow").style.backgroundColor = "yellow";
-        currentLight = "yellow";
-      } else if (currentLight === "yellow") {
-        document.getElementById("red").style.backgroundColor = "red";
-        currentLight = "red";
-      }
-    }
-  </script>
+  <script src="js traffic light.js"></script>
 </body>
+
 </html>
