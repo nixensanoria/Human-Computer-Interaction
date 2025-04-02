@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.traffic-light {
+  width: 100px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #555;
+  transition: background-color 7s ease;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #9ba39b;
+  position: absolute;
+  left: 55%;
+  bottom: 33%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  justify-content: flex-end;
+  align-items: end;
+}
